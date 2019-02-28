@@ -33,7 +33,6 @@ class App < Sinatra::Base
     case @operation
     when 'add'
         result = (@number1 + @number2).to_s
-        binding.pry
       when 'subtract'
         result = (@number1 - @number2).to_s
       when 'multiply'
