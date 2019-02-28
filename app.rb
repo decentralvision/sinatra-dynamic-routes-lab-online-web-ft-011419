@@ -20,6 +20,6 @@ class App < Sinatra::Base
       string += " #{@phrase}"
     end
     string
-    binding.pry
+
   end
 end
