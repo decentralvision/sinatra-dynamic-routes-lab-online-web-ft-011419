@@ -31,6 +31,7 @@ class App < Sinatra::Base
     @number2 = params[:number2].to_i
     @operation = params[:operation]
     case @operation
+          binding.pry
       when add
         result = (@number1 + @number2).to_s
       when subtract
@@ -40,7 +41,7 @@ class App < Sinatra::Base
       when divide
         result = (@number1 / @number2).to_s
     end
-    binding.pry
+
     result
   end
 end
