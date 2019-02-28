@@ -40,6 +40,7 @@ class App < Sinatra::Base
       when divide
         result = (@number1 / @number2).to_s
     end
+    binding.pry
     result
   end
 end
