@@ -31,14 +31,14 @@ class App < Sinatra::Base
     @number2 = params[:number2].to_i
     @operation = params[:operation]
     case @operation
-      when add
+    when 'add'
         result = (@number1 + @number2).to_s
         binding.pry
-      when subtract
+      when 'subtract'
         result = (@number1 - @number2).to_s
-      when multiply
+      when 'multiply'
         result = (@number1 * @number2).to_s
-      when divide
+      when 'divide'
         result = (@number1 / @number2).to_s
     end
 
